@@ -34,7 +34,7 @@ def mofilter():
         else:
             return filepath, 1, face
 
-    default_cascade = cv2.CascadeClassifier('C:\\Users\\sion_\\Desktop\\Python Projects\\Zero\\Visual\\Face_Recog\\haarcascade_frontalface_default.xml')
+    default_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 
     # iterate all the photos and mark rectangles on detected faces
     filepaths = glob.glob(path.join(PHOTOS_DIR, '*.jpg'))
